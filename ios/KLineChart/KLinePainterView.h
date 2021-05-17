@@ -32,8 +32,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic,assign) VolState volState;
 
-@property(nonatomic,assign) NSString *mainBackgroundColor;
-
 @property(nonatomic,assign) SecondaryState secondaryState;
 
 @property(nonatomic,assign) KLineDirection direction;

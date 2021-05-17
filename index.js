@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { UIManager, Platform } from "react-native";
+import { UIManager } from "react-native";
 import { requireNativeComponent, findNodeHandle } from "react-native";
 
 let byronController = undefined;
@@ -11,9 +11,7 @@ export const dispatchByronKline = (event = "init", list = []) => {
   }
   UIManager.dispatchViewManagerCommand(
     findNodeHandle(byronController),
-    Platform.OS === "android"
-      ? "ByronKline"
-      : UIManager.getViewManagerConfig("ByronKline").Commands.byronController,
+    UIManager.getViewManagerConfig("ByronKline").Commands.byronController,
     [{ event, list }]
   );
 };
@@ -71,7 +69,6 @@ ByronKlineChart.defaultProps = {
   indicators: [],
   pricePrecision: 2,
   volumePrecision: 2,
-  mainBackgroundColor: '#18181A',
   increaseColor: "#00BD9A",
   decreaseColor: "#FF6960",
 };

@@ -1,4 +1,4 @@
-## react-native-kline
+## @ste7en/react-native-kline
 
 [![npm version](http://img.shields.io/npm/v/react-native-kline.svg?style=flat-square)](https://npmjs.org/package/react-native-kline "View this project on npm")
 [![npm downloads](http://img.shields.io/npm/dm/react-native-kline.svg?style=flat-square)](https://npmjs.org/package/react-native-kline "View this project on npm")
@@ -9,13 +9,13 @@
 _仓库Android源码来源于[icechao/KlineChart](https://github.com/icechao/KlineChart). iOS源码来源于[h-js/KLine](https://github.com/h-js/KLine)_
 
 
-<img src="https://github.com/472647301/react-native-kline/blob/master/screenshots/ios.png?raw=true" width="320">
-<img src="https://github.com/472647301/react-native-kline/blob/master/screenshots/android.png?raw=true" width="320">
+<img src="https://github.com/hukaibaihu/react-native-kline/blob/master/screenshots/ios.png?raw=true" width="320">
+<img src="https://github.com/hukaibaihu/react-native-kline/blob/master/screenshots/android.png?raw=true" width="320">
 
 ## Install
 
 ```shell
-npm i --save react-native-kline
+npm i --save @ste7en/react-native-kline
 ```
 
 ## Examples
@@ -147,3 +147,7 @@ npm run ios
 | volLegendColor | string |  交易量图例颜色 | Android  |
 | volLineChartColor | string |  设置当成交量视图显示为线时的颜色 | Android  |
 | volLegendMarginTop | number | 交易量图例距离量视图上边缘的距离  | Android  |
+
+## Important
+
+Origin Repo: [472647301/react-native-kline](https://github.com/472647301/react-native-kline)

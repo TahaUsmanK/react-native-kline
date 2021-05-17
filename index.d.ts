@@ -7,6 +7,7 @@ export interface KLineBar {
   close: number;
   high: number;
   id: number;
+  count: number;
   low: number;
   vol: number;
 }

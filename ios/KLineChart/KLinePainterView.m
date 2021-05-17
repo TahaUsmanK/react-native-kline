@@ -91,12 +91,6 @@
   [self setNeedsDisplay];
 }
 
-- (void)setMainBackgroundColor:(NSString *)mainBackgroundColor {
-  _mainBackgroundColor = mainBackgroundColor;
-    self.mainRenderer.mainBackgroundColor = mainBackgroundColor;
-  [self setNeedsDisplay];
-}
-
 - (instancetype)initWithFrame:(CGRect)frame
                         datas:(NSArray<KLineModel *> *)datas
                       scrollX:(CGFloat)scrollX
@@ -307,14 +301,14 @@
 }
 
 -(void)drawBgColor:(CGContextRef)context rect:(CGRect)rect {
-    CGContextSetFillColorWithColor(context, [UIColor colorWithHexString:_mainBackgroundColor].CGColor);
+     CGContextSetFillColorWithColor(context, ChartColors_bgColor.CGColor);
      CGContextFillRect(context, rect);
-      [_mainRenderer drawBg:context bgColor:_mainBackgroundColor];
+      [_mainRenderer drawBg:context];
       if(_volRenderer != nil) {
-          [_volRenderer drawBg:context bgColor:_mainBackgroundColor];
+          [_volRenderer drawBg:context];
       }
       if(_seconderyRender != nil) {
-          [_seconderyRender drawBg:context bgColor:_mainBackgroundColor];
+          [_seconderyRender drawBg:context];
       }
 }
 -(void)drawGrid:(CGContextRef)context {
@@ -469,7 +463,7 @@
     CGRect dateRect = [dateText getRectWithFontSize:ChartStyle_defaultTextSize];
     CGFloat datepadding = 3;
     CGContextSetStrokeColorWithColor(context, [UIColor whiteColor].CGColor);
-    CGContextSetFillColorWithColor(context, [UIColor colorWithHexString:_mainBackgroundColor].CGColor);
+    CGContextSetFillColorWithColor(context, ChartColors_bgColor.CGColor);
     CGContextAddRect(context, CGRectMake(curX - dateRect.size.width / 2 - datepadding, CGRectGetMinY(self.dateRect), dateRect.size.width + datepadding * 2, dateRect.size.height + datepadding * 2));
     CGContextDrawPath(context, kCGPathFillStroke);
     [self.mainRenderer drawText:dateText atPoint:CGPointMake(curX - dateRect.size.width  / 2, CGRectGetMinY(self.dateRect) + datepadding) fontSize:ChartStyle_defaultTextSize textColor: [UIColor whiteColor]];
@@ -508,7 +502,7 @@
         CGContextAddLineToPoint(context, self.frame.size.width, y);
         CGContextDrawPath(context, kCGPathStroke);
         CGContextAddRect(context, CGRectMake(self.frame.size.width - rect.size.width, y - rect.size.height / 2, rect.size.width, rect.size.height));
-        CGContextSetFillColorWithColor(context, [UIColor colorWithHexString:_mainBackgroundColor].CGColor);
+        CGContextSetFillColorWithColor(context, ChartColors_bgColor.CGColor);
         CGContextDrawPath(context, kCGPathFill);
         [self.mainRenderer drawText:text atPoint:CGPointMake(self.frame.size.width - rect.size.width, y - rect.size.height / 2) fontSize:fontSize textColor:ChartColors_reightTextColor];
         if(_isLine) {
@@ -530,7 +524,7 @@
         CGContextSetLineWidth(context, 0.5);
         CGFloat locations1[] = {};
         CGContextSetLineDash(context, 0, locations1, 0);
-        CGContextSetFillColorWithColor(context, [UIColor colorWithHexString:_mainBackgroundColor].CGColor);
+        CGContextSetFillColorWithColor(context, ChartColors_bgColor.CGColor);
         CGContextMoveToPoint(context,self.frame.size.width * 0.8, y - r);
         
         CGFloat curX = self.frame.size.width * 0.8;

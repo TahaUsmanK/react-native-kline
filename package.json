@@ -1,9 +1,10 @@
 {
-  "name": "react-native-kline",
+  "name": "@ste7en/react-native-kline",
   "title": "React Native Kline",
-  "version": "2.1.2",
+  "version": "1.0.0",
   "description": "React Native Kline",
   "main": "index.js",
+  "types": "index.d.ts",
   "files": [
     "README.md",
     "android",
@@ -13,19 +14,21 @@
     "react-native-kline.podspec"
   ],
   "scripts": {
+    "trypublish": "npm publish --access=public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/472647301/react-native-kline.git",
-    "baseUrl": "https://github.com/472647301/react-native-kline"
+    "url": "git+https://github.com/hukaibaihu/react-native-kline.git",
+    "baseUrl": "https://github.com/hukaibaihu/react-native-kline"
   },
   "keywords": [
     "react-native"
   ],
+  "homepage": "https://github.com/hukaibaihu/react-native-kline#readme",
   "author": {
-    "name": "Byron",
-    "email": "472647301@qq.com"
+    "name": "Ste7en",
+    "email": "986535362@qq.com"
   },
   "license": "MIT",
   "licenseFilename": "LICENSE",

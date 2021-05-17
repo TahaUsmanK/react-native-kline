@@ -45,8 +45,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic,assign) KLineDirection direction;
 
-- (void) setMainBackgroundColor:(NSString *)mainBackgroundColor;
-
 @end
 
 NS_ASSUME_NONNULL_END

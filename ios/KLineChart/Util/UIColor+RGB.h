@@ -16,8 +16,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(UIColor *)rgbFromHex:(NSUInteger)argbValue;
 
-+(UIColor *)colorWithHexString:(NSString *)color;
-
 @end
 
 NS_ASSUME_NONNULL_END
