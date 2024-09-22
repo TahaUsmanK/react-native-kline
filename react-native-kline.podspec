@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   # optional - use expanded license entry instead:
   s.author       = package["author"]
   s.platforms    = { :ios => "9.0" }
-  s.source       = { :git => "https://github.com/hukaibaihu/react-native-kline.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/TahaUsmanK/react-native-kline.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,c,m,swift,xib}"
   s.requires_arc = true
@@ -22,4 +22,3 @@ Pod::Spec.new do |s|
   # ...
   # s.dependency "..."
 end
-

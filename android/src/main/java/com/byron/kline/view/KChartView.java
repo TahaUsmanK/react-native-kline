@@ -1017,15 +1017,15 @@ public class KChartView extends BaseKChartView {
     public KChartView setSelectedInfoLabels(String[] infoLabels) {
         if (null != infoLabels) {
             if (infoLabels.length != 8) {
-                throw new RuntimeException("市场行情信息有且只有八个!请按顺序传入" +
-                        "时间 " +
-                        "开  " +
-                        "高  " +
-                        "低  " +
-                        "收  " +
-                        "涨跌额    " +
-                        "涨跌幅    " +
-                        "成交量  的翻译!");
+                throw new RuntimeException("Market information must have exactly eight items! Please provide translations in the following order: " +
+                        "Time " +
+                        "Open " +
+                        "High " +
+                        "Low " +
+                        "Close " +
+                        "Change " +
+                        "% Change " +
+                        "Volume");
             }
             mainRender.setMarketInfoText(infoLabels);
 

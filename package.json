@@ -1,6 +1,5 @@
 {
-  "name": "@ste7en/react-native-kline",
-  "title": "React Native Kline",
+  "name": "@tahausmank/react-native-kline",
   "version": "1.0.0",
   "description": "React Native Kline",
   "main": "index.js",
@@ -19,16 +18,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hukaibaihu/react-native-kline.git",
-    "baseUrl": "https://github.com/hukaibaihu/react-native-kline"
+    "url": "git+https://github.com/TahaUsmanK/react-native-kline.git"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "chart",
+    "kline"
   ],
-  "homepage": "https://github.com/hukaibaihu/react-native-kline#readme",
+  "homepage": "https://github.com/TahaUsmanK/react-native-kline#readme",
   "author": {
-    "name": "Ste7en",
-    "email": "986535362@qq.com"
+    "name": "TahaUsmanK",
+    "email": "tahausmank1661@gmail.com"
   },
   "license": "MIT",
   "licenseFilename": "LICENSE",
